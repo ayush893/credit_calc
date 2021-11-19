@@ -1,0 +1,25 @@
+<form action='/credit_details' method='post' accept-charset="UTF-8">
+  <label for='email'>Email Address<label>
+  <input type="text" id="email" name="email"> <br>
+
+  <label for='pan_card'>Pan Card<label>
+  <input type="text" id="pan_card" name="pan_card"> <br>
+  
+  <label for='aadhar_no'>Aadhar Number<label>
+  <input type="integer" id="aadhar_no" name="aadhar_no"> <br>
+
+  <label for='bank_account_no'>Bank Account Number<label>
+  <input type="integer" id="bank_account_no" name="bank_account_no"> <br>
+
+  <label for='bank_ifsc'>Bank IFSC<label>
+  <input type="text" id="bank_ifsc" name="bank_ifsc"> <br>
+
+   <label for='balance_inflow'>Balance InFlow<label>
+  <input type="integer" id="balance_inflow" name="balance_inflow"> <br>
+
+     <label for='balance_outflow'>Balance OutFlow<label>
+  <input type="integer" id="balance_outflow" name="balance_outflow"> <br>
+
+  <input type="submit" value="Submit">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>

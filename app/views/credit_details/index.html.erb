@@ -1,0 +1,9 @@
+<table>
+  <% @credit_detail.each do |credit| %>
+    <tr>
+    <td><%= credit.email %></td>
+    <td><%= credit.meta["credit_limit_val"] %></td>
+    <td><%= credit.meta["credibility_score_val"] %></td>
+    </tr>
+  <% end %>
+</table>
