@@ -25,6 +25,8 @@ class CreditDetailsController < ApplicationController
     def your_detail
       @credit_detail = CreditDetail.last
       @credit_detail
+      @credit_detail
+      @credit_detail
       render json: {
         email: @credit_detail.email,
         credit_limit: @credit_detail.meta["credit_limit_val"],
